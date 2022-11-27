@@ -1,20 +1,26 @@
-import { CarInterface } from "../../cars/interfaces/car.interface";
 import { v4 as uuid } from "uuid";
 
-export const CARS_SEED: CarInterface[] = [
+import { Brand } from "../../brands/entities/brand.entity";
+
+export const BRANDS_SEED: Brand[] = [
   {
     id: uuid(),
-    brand: "Toyota",
-    model: "Corolla"
+    name: "toyota",
+    createAt: new Date().getTime()
   },
   {
     id: uuid(),
-    brand: "Honda",
-    model: "Civic"
+    name: "honda",
+    createAt: new Date().getTime()
   },
   {
     id: uuid(),
-    brand: "Jeep",
-    model: "Cherokee"
+    name: "jeep",
+    createAt: new Date().getTime()
+  },
+  {
+    id: uuid(),
+    name: "tesla",
+    createAt: new Date().getTime()
   }
 ];
